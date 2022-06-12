@@ -1,0 +1,16 @@
+{
+    "name": "MQ3",
+    "description": "Mục mở rộng dành cho cảm biến MQ3",
+    "libs": [
+        "mq3.py"
+    ],
+    "blocks": [
+        "definition.js"
+    ],
+    "toolbox": "toolbox.xml",
+    "languages": {
+        "en": "languages/en.js",
+        "vi": "languages/vi.js"
+    },
+    "poster": "poster.png"
+}

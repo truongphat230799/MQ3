@@ -1,0 +1,6 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category name="MQ3" colour="#6642bf" icon="beer">
+    <block type="mq3_get_ppm"/>
+    <block type="mq3_get_acohol"/>
+  </category>
+</xml>
