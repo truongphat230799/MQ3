@@ -26,7 +26,7 @@ class MQ3(object):
         adc.atten(ADC.ATTN_11DB)
         adc.width(ADC.WIDTH_12BIT)
         value = adc.read()
-        print('ADC value: ', value)
+        #print('ADC value: ', value)
         # if value == 0:
         #     return -1
         if value < 1:
