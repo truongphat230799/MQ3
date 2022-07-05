@@ -41,9 +41,11 @@ class MQ3(object):
     def get_ppm(self):
         """Returns the ppm of CO2 sensed (assuming only CO2 in the air)"""
         #print(self.get_resistance(), self.RZERO, -self.PARB)
-        ratio = self.get_resistance() / 800
-        x = 0.3934 * ratio
-        return ratio * PARA + PARB
+        #ratio = self.get_resistance() / 800
+        #x = 0.3934 * ratio
+        #return ratio * PARA + PARB
+        #print(self.get_resistance(), self.RZERO, -self.PARB)
+        return round(self.PARA * math.pow((self.get_resistance()/ self.RZERO), -self.PARB))
   
 
     def get_acohol(self):
