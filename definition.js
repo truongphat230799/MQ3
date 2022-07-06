@@ -91,7 +91,7 @@ Blockly.Blocks['mq3_get_ppm'] = {
     Blockly.Python.definitions_['import_mq3'] = 'from mq3 import MQ3';
     Blockly.Python.definitions_["import_create_mq3"] = 'mq3 = MQ3(Pin(' + dropdown_name + '.adc_pin)) # analog PIN';
     // TODO: Assemble Python into code variable.
-    var code = "'{:.2f}'.format(mq3.get_acohol())";
+    var code = "'{:.3f}'.format(mq3.get_acohol())";
     // TODO: Change ORDER_NONE to the correct strength.
     return [code, Blockly.Python.ORDER_NONE];
   };
